@@ -10,7 +10,7 @@
 	width: 100%;
 	position: fixed;
 	z-index: 100;
-	background-color: #23252a;
+	background-image: linear-gradient(rgb(72, 110, 98), rgb(0, 19, 11));
 	/* opacity: 90%; */
 	display: grid;
 	grid-template-columns: 1fr 2fr;
