@@ -169,7 +169,6 @@ a.list-item:active {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 20px;
 	padding: 60px;
 	position: relative;
 	animation: mymove 5s;
@@ -179,13 +178,13 @@ a.list-item:active {
     width: 50%;
 	margin-right: 50px;
 	line-height: 20px;
-	min-width: 400px;
+	min-width: 300px;
 	margin-bottom: 20px;
 	flex: 1;
 }
 .introduce-img{
 	width: 40%;
-	min-width: 400px;
+	min-width: 350px;
 	flex: 1;
 }
 .introduce-conten h2 {
@@ -402,3 +401,4 @@ a.list-item:active {
     background: none;
 	
 }
+
