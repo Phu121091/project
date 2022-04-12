@@ -4,7 +4,7 @@ const bangtin = [
   {
     id: 0,
     tittle: `Golfer 14 tuổi vô địch Tiền Phong Golf Championship 2021`,
-    content: `<a href="/PJ/new0.html" class="linktintuc">
+    content: `<a href="/project/Tintuccontent/Tintuccontent0.html" class="linktintuc">
     <div class="imgdiv"><img src="https://th.bing.com/th/id/OIP.o6HCSZtE1EkRJzCxqUkVsgHaFj?pid=ImgDet&rs=1" alt="" class="imgtt"></div> 
      <h5 class="tittle">Golfer 14 tuổi vô địch Tiền Phong Golf Championship 2021</h5>
  </a>`,
@@ -13,7 +13,7 @@ const bangtin = [
     id: 1,
     tittle: `Cặp kè đại gia U60, Hiền Hồ tổn thất nặng nề: Sụp đổ hình tượng, tẩy
     chay, huỷ show`,
-    content: `<a href="/PJ/new1.html" class="linktintuc">
+    content: `<a href="/project/Tintuccontent/Tintuccontent1.html" class="linktintuc">
     <div class="imgdiv"><img src="https://ttol.vietnamnetjsc.vn/images/2022/03/21/20/27/hien-ho-choi-golf-5.jpg" alt="" class="imgtt"></div>
     <h5 class="tittle">Cặp kè đại gia U60, Hiền Hồ tổn thất nặng nề: Sụp đổ hình tượng, tẩy
         chay, huỷ show</h5>
@@ -34,8 +34,9 @@ const bangtin = [
       <div class="imgdiv"><img src="https://golftimes.vn/wp-content/uploads/2021/12/hinh-anh-golf-hang-dau-the-gioi-1.jpg" alt="" class="imgtt"></div>
       <h5 class="tittle">Bryson DeChambeau golf hàng đầu thế giới từng chơi golf rất tệ</h5>
   </a>`,
+    area:0,
   },
-  {
+    {
     id: 4,
     tittle: `Ai là người giữ kỷ lục Hole-in-one ở Việt Nam?`,
     content: `<a href="/PJ/new4.html" class="linktintuc">
@@ -134,8 +135,9 @@ bangtin.slice(0,3).map((d)=>{
 
 const tintuccontainer = document.querySelector(".tintuccontainer");
 const pageContainer = document.querySelector(".page-container");
-const rendertintuc = (start, end) => {
-  bangtin.slice(start, end).map((d) => {
+const rendertintuc = (start, end,tin) => {
+  tintuccontainer.innerHTML=``;
+  tin.slice(start, end).map((d) => {
     const imageWrapper = document.createElement("div");
     imageWrapper.classList.add("tintuc");
     imageWrapper.innerHTML = `
@@ -146,8 +148,9 @@ const rendertintuc = (start, end) => {
   });
 };
 
-const renderPageBtn = () => {
-  const pages = bangtin.length / 6;
+const renderPageBtn = (a) => {
+  pageContainer.innerHTML=``;
+  const pages = a.length / 6;
   for (let i = 1; i <= Math.ceil(pages); i++) {
     const btn = document.createElement("span");
     btn.classList.add("button");
@@ -168,11 +171,56 @@ const renderPageBtn = () => {
 
       const position = button.innerHTML;
       tintuccontainer.innerHTML = "";
-      rendertintuc(Number(position * 6) - 6, Number(position * 6));
+      rendertintuc(Number(position * 6) - 6, Number(position * 6),a);
     });
   });
 };
-rendertintuc(0, 6);
-renderPageBtn();
+rendertintuc(0, 6,bangtin);
+renderPageBtn(bangtin);
+
+const menutinTG =[];
+const menutinVN =[];
+for(i=0;i<bangtin.length;i++){
+  if (bangtin[i].area == 0){
+    menutinTG.push(bangtin[i]);
+  }
+  else menutinVN.push(bangtin[i]);
+}
+console.log(menutinTG);
+console.log(menutinVN);
+const tinTGbtn = document.querySelector(".newworld");
+const tinVNbtn = document.querySelector(".newVN");
+
+tinTGbtn.onclick=()=>{
+rendertintuc(0,6,menutinTG);
+renderPageBtn(menutinTG);
+}
+
+tinVNbtn.onclick=()=>{
+rendertintuc(0,6,menutinVN);
+renderPageBtn(menutinVN);
+}
 
 
+const menubtn = document.querySelector(".menucol");
+const headermenu = document.querySelector(".header-center");
+
+menubtn.addEventListener("click", () => {
+  headermenu.classList.toggle("options-active");
+});
+
+const loging = document.querySelector("#login");
+const logou = document.querySelector(".logout");
+console.log(loging);
+const cuser = JSON.parse(localStorage.getItem("currentUser"));
+console.log(cuser);
+if (cuser!==``){
+loging.innerHTML=`${cuser.username}`;
+loging.setAttribute("href","/project/InforUser/InforUser.html");
+logou.classList.add("logout-active");}
+
+const logout = document.querySelector(".logoutbtn");
+logout.onclick = () =>{
+  localStorage.removeItem(`currentUser`);
+  location.reload();
+}
