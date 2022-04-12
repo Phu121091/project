@@ -22,7 +22,7 @@ form.addEventListener("submit", (m) => {
 	);
 	if (findUser) {
 		localStorage.setItem("currentUser", JSON.stringify(findUser));
-		window.location.href = "/project/home/Home.html";
+		window.location.href = "/project/Home/Home.html";
 	} else {
 		alert("Mật khẩu không đúng hoặc chưa có tài khoản");
 	}
