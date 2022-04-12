@@ -40,8 +40,17 @@
 	border: none;
 }
 .header-left {
-	margin-left: 40px;
+	padding-left: 5%;
 	padding: 30px;
+}
+.header-left a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+}
+.header-left img{
+	border-radius: 50%;
+
 }
 .header-center {
 	width: 100%;
@@ -63,6 +72,20 @@
 a.list-item:hover,
 a.list-item:active {
 	text-decoration: underline;
+}
+.logout{
+	display: none;
+	background: none;
+	padding: 20px;
+}
+.logoutbtn{
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.header .header-center .logout-active{
+	display: block;
 }
 
 .contact-text {
@@ -196,7 +219,7 @@ a.list-item:active {
 .sectiongt5 .imgsangolf .imgsg{
 	width: 100%;
 	height: auto;
-	min-width: 500px;
+	min-width: 400px;
 }
 .btnmap{
 	display: flex;
@@ -334,4 +357,4 @@ a.list-item:active {
 			background: none;
 			
 		}
-	
+		
