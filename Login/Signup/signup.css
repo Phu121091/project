@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .form{
-    max-width: 30%;
+    width: 30%;
     height: 500px;
     border: 1px solid none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 14px 14px;
@@ -15,7 +15,7 @@
     text-align: center;
     color: rgb(108, 108, 218);
     font-size: 40px;
-   padding: 30px 0px;
+   padding: 20px 0px;
 }
 .input input{
     width: 300px;
@@ -25,7 +25,7 @@
     margin: 0 auto;
     height: 30px;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .btn{
     font-size: 20px;
@@ -39,14 +39,14 @@
 }
 .form .signup{
     text-decoration: none;
-    background-color: rgb(70, 199, 70);
-    color: white;
-    padding: 10px 20px;
+    color: black;
     font-size: 20px;
-    border-radius: 10px;
     display: block;
-    width: 130px;
+    width: 230px;
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
+}
+.form a:hover{
+    text-decoration: underline;
 }
