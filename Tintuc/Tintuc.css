@@ -130,7 +130,7 @@ a.list-item:active {
     margin-left: 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
 }
 .tintuc{
     border: 1px solid black;
