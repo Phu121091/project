@@ -39,5 +39,5 @@ if (cuser!==``){
 	};}
 	localStorage.setItem("users", JSON.stringify(users));
 }
-	window.location.href = "/project/home/Home.html";
+	window.location.href = "/project/Home/Home.html";
 });
