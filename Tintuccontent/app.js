@@ -129,6 +129,28 @@ const bangtin = [
       newnew.innerHTML = `<a href="/PJ/new${d.id}.html" class="linktintuc">${d.tittle}`;
       menunews.appendChild(newnew);
   });
+const menutinTG =[];
+const menutinVN =[];
+for(i=0;i<bangtin.length;i++){
+  if (bangtin[i].area == 0){
+    menutinTG.push(bangtin[i]);
+  }
+  else menutinVN.push(bangtin[i]);
+}
+console.log(menutinTG);
+console.log(menutinVN);
+const tinTGbtn = document.querySelector(".newworld");
+const tinVNbtn = document.querySelector(".newVN");
+
+tinTGbtn.onclick=()=>{
+rendertintuc(0,6,menutinTG);
+renderPageBtn(menutinTG);
+}
+
+tinVNbtn.onclick=()=>{
+rendertintuc(0,6,menutinVN);
+renderPageBtn(menutinVN);
+}
 
   const menubtn = document.querySelector(".menucol");
 const headermenu = document.querySelector(".header-center");
