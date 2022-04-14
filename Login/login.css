@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 .form{
-    max-width: 30%;
-    height: 500px;
+    width: 30%;
     border: 1px solid none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 14px 14px;
     margin: 0 auto;
     margin-top: 100px;
+    padding-bottom: 20px;
+    min-width: 350px;
 }
 .title{
     text-align: center;
