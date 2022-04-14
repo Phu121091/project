@@ -308,6 +308,9 @@ h5{
 	.header .options-active {
 		display: block;
 	}
+	.maincontent{
+		padding:5px;
+	}
 }
 .menucol{
 	display: none;
