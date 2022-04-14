@@ -128,16 +128,6 @@ a.list-item:active {
 .menu-block-conten ul{
     margin-bottom: 60px;
 }
-.menu-block-conten a{
-    text-decoration: none;
-    color: white;
-    background-color: #212f85;
-    padding: 10px 20px;
-    margin-left: 300px;
-}
-.menu-block-conten a:hover{
-    background-color: black;
-}
 .menu-block1{
     width: 80%;
     display: flex;
@@ -158,14 +148,18 @@ a.list-item:active {
 .menu-block1-conten ul{
     margin-bottom: 60px;
 }
-.menu-block1-conten a{
+.dangki{
+	width: fit-content;
     text-decoration: none;
     color: white;
     background-color: #212f85;
     padding: 10px 20px;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.menu-block1-conten a:hover{
-    background-color: black;
+.dangki:hover {
+	background-color: black;
 }
 .menu-block2{
     width: 80%;
@@ -180,17 +174,24 @@ a.list-item:active {
     padding-bottom: 20px;
 }
 .menu-block2 p{
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
-.menu-block2-conten a{
-    text-decoration: none;
-    color: white;
-    background-color: #212f85;
-    padding: 10px 20px;
-    margin-left: 20px;
+.mb{
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
-.menu-block2-conten a:hover{
-    background-color: black;
+.bi{
+	width: 60%;
+	min-width: 350px;
+}
+.bc{
+	width: 30%;
+	min-width: 350px;
+	
+}
+.imgblock{
+   width: 100%;
+   height: auto;
 }
 
 /* css phần end kết nối */
