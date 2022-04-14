@@ -114,7 +114,7 @@ const bangtin = [
       bangtin.map((d)=>{
         if ((d.tittle.toLowerCase().trim()).includes(a)) {
            const finded = document.createElement("h5");
-          finded.innerHTML = `<a href="/PJ/new${d.id}.html">${d.tittle}`;
+          finded.innerHTML = `<a href="/project/Tintuccontent/Tintuccontent${d.id}.html">${d.tittle}`;
           findmenu.appendChild(finded);
       }
     });
@@ -126,7 +126,7 @@ const bangtin = [
   const menunews = document.querySelector(".menunews");
   bangtin.slice(0,3).map((d)=>{
       const newnew = document.createElement("h5");
-      newnew.innerHTML = `<a href="/PJ/new${d.id}.html" class="linktintuc">${d.tittle}`;
+      newnew.innerHTML = `<a href="/project/Tintuccontent/Tintuccontent${d.id}.html" class="linktintuc">${d.tittle}`;
       menunews.appendChild(newnew);
   });
 const menutinTG =[];
