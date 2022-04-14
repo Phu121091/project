@@ -42,6 +42,7 @@
 .header-left {
 	padding-left: 5%;
 	padding: 30px;
+	flex:1;
 }
 .header-left a {
 	color: #fff;
