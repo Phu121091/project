@@ -206,7 +206,7 @@ a.list-item:active {
 .sectiongt5-content{
 	padding: 50px;
 	width: 40%;
-	min-width: 500px;
+	min-width: 350px;
 	color:white;
 }
 .sectiongt5-content ul{
@@ -219,7 +219,7 @@ a.list-item:active {
 .sectiongt5 .imgsangolf .imgsg{
 	width: 100%;
 	height: auto;
-	min-width: 400px;
+	min-width: 350px;
 }
 .btnmap{
 	display: flex;
@@ -241,7 +241,6 @@ a.list-item:active {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	height: 350px;
 	padding-top: 50px;
 	background-image: linear-gradient(rgb(241, 247, 245), rgb(144, 148, 146));
 }
@@ -259,8 +258,9 @@ a.list-item:active {
 	flex-direction: column;
 	align-items: center;
 	width: 30%;
-	height: 80px;
-	min-width: 100px;
+	/* height: 80px; */
+	min-width: 150px;
+	
 }
 .hlv img{
 	width: 100px;
@@ -313,6 +313,7 @@ a.list-item:active {
 		}
 		.header .header-left{
 			width: 50%;
+			flex: 1;
 		}
 		.header .header-center{
 			position: fixed;
@@ -350,7 +351,11 @@ a.list-item:active {
 		
 		.header .options-active {
 			display: block;
-		}}
+		}
+		.sectiongt3{
+			padding: 5px;
+		}
+	}
 		.menucol{
 			display: none;
 			border: none;
