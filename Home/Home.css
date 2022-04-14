@@ -208,7 +208,7 @@ a.list-item:active {
 	color: #23252a;
 }
 .sectiongt3 {
-	padding:100px ;
+	padding:10%;
 	position: relative;
 	animation: moveleft 5s;
 	animation-fill-mode: forwards;
@@ -277,7 +277,7 @@ a.list-item:active {
 }
 .menu-block-img{
 	width: 45%;
-	min-width:400px;
+	min-width:350px;
 	margin-right: 20px;
 	flex: 1;
 }
@@ -308,7 +308,7 @@ a.list-item:active {
 }
 .container-end .container-end-img{
 	width: 60%;
-	min-width: 400px;
+	min-width: 350px;
 	margin-right: 20px;
 	flex: 2;
 }
@@ -417,10 +417,23 @@ main{
 
 .header .options-active {
     display: block;
-}}
+}
+.sectiongt3{
+	padding: 10px;
+	padding-top: 100px;
+}
+.menu{
+	padding: 10px;
+}
+.container{
+	padding: 10px;
+}
+}
 .menucol{
 	display: none;
 	border: none;
     background: none;
 	
 }
+
+
