@@ -42,7 +42,7 @@
 .header-left {
 	padding-left: 5%;
 	padding: 30px;
-	flex:1;
+	
 }
 .header-left a {
 	color: #fff;
@@ -381,6 +381,7 @@ main{
 }
 .header .header-left{
 	width: 50%;
+	flex:1;
 }
 .header .header-center{
 	position: fixed;
