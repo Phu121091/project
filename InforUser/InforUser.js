@@ -34,5 +34,5 @@ logou.classList.add("logout-active");}
 const logout = document.querySelector(".logoutbtn");
 logout.onclick = () =>{
   localStorage.removeItem(`currentUser`);
-  location.reload();
+  window.location.href = "/project/Home/Home.html";
 }
