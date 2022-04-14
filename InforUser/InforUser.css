@@ -101,6 +101,7 @@ h1{
     padding: 50px;
     margin: 50px auto;
     border: 2px solid darkgreen;
+	min-width: 350px;
 }
 
 /* css phần end kết nối */
@@ -138,15 +139,16 @@ h1{
 	color: #212f85;
 }
 @media only screen and (max-width: 800px) {
-	main{
-		padding-top: 40px;
-	}
 	.header{
 		display: flex;
 		justify-content: space-between;
 	}
+	.infor{
+		padding: 10px;
+	}
 	.header .header-left{
 		width: 50%;
+		flex: 1;
 	}
 	.header .header-center{
 		position: fixed;
@@ -189,6 +191,9 @@ h1{
 		display: none;
 		border: none;
 		background: none;
+		
+	}
+	
 		
 	}
 	
