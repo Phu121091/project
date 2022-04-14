@@ -10,6 +10,7 @@
     border: 1px solid none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 14px 14px;
     margin-top: 30px;
+    padding-bottom:20px;
 }
 .block h1{
     text-align: center;
@@ -52,4 +53,9 @@
     margin: 0 auto;
     margin-top: 20px;
     cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+.block{
+ width: 100%;
+}
 }
