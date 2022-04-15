@@ -190,15 +190,12 @@ console.log(menutinTG);
 console.log(menutinVN);
 const tinTGbtn = document.querySelector(".newworld");
 const tinVNbtn = document.querySelector(".newVN");
-
 tinTGbtn.onclick=()=>{
-rendertintuc(0,6,menutinTG);
-renderPageBtn(menutinTG);
+  window.location.href = "/project/Tintuc/TinTG.html";
 }
 
 tinVNbtn.onclick=()=>{
-rendertintuc(0,6,menutinVN);
-renderPageBtn(menutinVN);
+  window.location.href = "/project/Tintuc/TinVN.html";
 }
 
 
